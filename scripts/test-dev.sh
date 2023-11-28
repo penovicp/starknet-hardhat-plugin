@@ -70,7 +70,7 @@ if [[ "y" == "$RUN_SETUP" ]]; then
     echo ""
     source ./scripts/setup-compilers.sh
     rm -rf starknet-hardhat-example
-    git clone -b "${EXAMPLE_REPO_BRANCH:=plugin}" --single-branch https://github.com/0xSpaceShard/starknet-hardhat-example.git
+    git clone -b "${EXAMPLE_REPO_BRANCH:=plugin}" --single-branch https://github.com/penovicp/starknet-hardhat-example.git
     cd starknet-hardhat-example
     npm ci
     npm install ../ # install plugin from source (parent dir)
